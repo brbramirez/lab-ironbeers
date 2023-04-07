@@ -1,7 +1,98 @@
-/*
-white: #f7f9f9;
-light-blue: #2081c3;
-dark-blue: #0a2c42;
-grey: #bfbfbf;
-font-family: Arial, Helvetica, sans-serif;
-*/
+* {
+    padding: 0;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+a{
+    color: white;
+}
+nav{
+    margin-top: 0;
+    color: #f7f9f9;
+    background-color: #2081c3;
+    height: 10vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+nav li {
+    float: left;
+    padding: 0 12px;
+}
+
+.container{
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    color: #f7f9f9;
+    background-color: #0a2c42;
+    margin-bottom: 0;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+  }
+
+button{
+    background-color: #2081c3;
+    border-radius: 5px;
+    border: none;
+    color: #f7f9f9;
+    margin: 10px;
+    height: 40px;
+    padding: 5px;
+}
+.beer-img{
+    height: 200px;
+    object-fit: cover;
+}
+.container2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the items horizontally */
+  }
+  
+.items {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+  
+.items li {
+    flex-basis: calc(33.33% - 20px); 
+    margin: 30px 10px;
+    box-sizing: border-box; 
+    text-align:center;
+    margin: 10px;
+    border: 1px solid darkblue;
+    border-radius: 5px;
+}
+.randombeer{
+    display: flex;
+    flex-direction: column;
+    width: 50vh;
+    align-items: center;
+    padding: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+

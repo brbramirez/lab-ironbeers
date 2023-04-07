@@ -1,0 +1,20 @@
+{{#each randombeer}}
+    <li class="randombeer">
+        <img class="beer-img" src="{{this.image_url}}" alt="Beer">
+        <h1>{{this.name}}</h1> <br>
+        <p>{{this.description}}</p><br>
+        <p>{{this.tagline}}</p><br>
+        {{#if food_pairing.length}}<br>
+        <p>Food pairing:</p>
+        <ul>
+            {{#each food_pairing}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+        {{else}}
+        <p>There's no food pairing available</p>
+        {{/if}}
+        <br>
+        <p>{{this.brewers_tips}}</p>
+    </li>
+{{/each}}
